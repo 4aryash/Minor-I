@@ -1,11 +1,8 @@
-// A C program for Prim's Minimum 
-// Spanning Tree (MST) algorithm. The program is 
-// for adjacency matrix representation of the graph 
 #include <limits.h> 
 #include <stdbool.h> 
 #include <stdio.h> 
-// Number of vertices in the graph 
-#define V 5 
+#define V 5     // Number of vertices in the graph 
+
 
 // A utility function to find the vertex with 
 // minimum key value, from the set of vertices 
