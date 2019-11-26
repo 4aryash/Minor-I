@@ -1,0 +1,19 @@
+Steps:
+(i)     Create MST set that keeps track of vertices already included in MST.
+(ii)    Assign key values to all vertices in the input graph. Initialize all key values as INFINITE (∞). Assign key values like 0 for the first vertex so that it is picked first.
+(iii)   While MST set doesn't include all vertices.
+        (i) Pick vertex u which is not is MST set and has minimum key value. Include 'u'to MST set.
+        (ii)Update the key value of all adjacent vertices of u. To update, iterate through all adjacent vertices. For every adjacent vertex v, if the weight of edge u.v less than the previous key value of v, update key value as a weight of u.v.
+
+MST-PRIM (G, w, r)
+ 1. for each u ∈ V [G]
+ 2. do key [u] ← ∞
+ 3. π [u] ← NIL
+ 4. key [r] ← 0
+ 5. Q ← V [G]
+ 6. While Q ? ∅
+ 7. do u ← EXTRACT - MIN (Q)
+ 8. for each v ∈ Adj [u]
+ 9. do if v ∈ Q and w (u, v) < key [v]
+ 10. then π [v] ← u
+ 11. key [v] ← w (u, v)
