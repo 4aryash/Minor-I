@@ -1,4 +1,5 @@
-*The following code implements the Prim-Jarnik-Dijkstra algorithm for generating a Minimum Spanning Tree (MST) from a given graph.*/
+/*The following code implements the Prim algorithm for generating a Minimum Spanning Tree (MST) from a given graph.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
