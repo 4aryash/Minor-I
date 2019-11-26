@@ -289,10 +289,10 @@ int main(int argc, char** argv){
   chooseMenu();
   float time_spent;
 	get();
-	// printf("\n\nThe Path is:\n\n");
-	// time_spent=mincost(0);
-	// put();
-  // printf("\n\ntotal time spent is %f", time_spent);
+	printf("\n\nThe Path is:\n\n");
+	time_spent=mincost(0);
+	put();
+  printf("\n\ntotal time spent is %f", time_spent);
 
   exit(0);
 }
